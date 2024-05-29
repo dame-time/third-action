@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Printing issue details
-        run: echo "Issue: ${{ toJson(github) }}"
+        run: echo "The context of the workflow is ${{ toJSON(github) }}"
